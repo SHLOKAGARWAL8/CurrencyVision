@@ -12,16 +12,19 @@ public class CurrencyService {
     }
 
     /**
-     * Returns the JSON response from the API.
+     * Gets the latest exchange rate.
      */
-    public String getExchangeRate(String from, String to) {
-        return apiService.getLatestRate(from, to);
+    public BigDecimal getExchangeRate(String from, String to) {
+
+        return apiService.getExchangeRate(from, to);
+
     }
 
     /**
-     * Converts an amount using a given exchange rate.
+     * Converts currency.
      */
-    public BigDecimal convert(BigDecimal amount, BigDecimal exchangeRate) {
+    public BigDecimal convert(BigDecimal amount,
+                              BigDecimal exchangeRate) {
 
         if (amount == null || exchangeRate == null) {
             return BigDecimal.ZERO;
@@ -32,7 +35,7 @@ public class CurrencyService {
     }
 
     /**
-     * Formats currency values.
+     * Formats the converted amount.
      */
     public String formatAmount(BigDecimal amount) {
 
@@ -40,7 +43,8 @@ public class CurrencyService {
             return "0.00";
         }
 
-        return amount.setScale(2, RoundingMode.HALF_UP).toPlainString();
+        return amount.setScale(2, RoundingMode.HALF_UP)
+                     .toPlainString();
     }
 
     /**
@@ -53,12 +57,17 @@ public class CurrencyService {
         }
 
         try {
+
             BigDecimal amount = new BigDecimal(value);
 
             return amount.compareTo(BigDecimal.ZERO) > 0;
 
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
+
             return false;
+
         }
+
     }
+
 }
