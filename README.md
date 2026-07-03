@@ -1,5 +1,32 @@
 #  CurrencyVision
 
+<div align="center">
+
+# 💱 CurrencyVision
+
+### Real-Time Currency Converter built with JavaFX
+
+<p>
+
+![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
+![JavaFX](https://img.shields.io/badge/JavaFX-Desktop-blue?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven)
+![API](https://img.shields.io/badge/API-Frankfurter-success?style=for-the-badge)
+![MVC](https://img.shields.io/badge/Architecture-MVC-purple?style=for-the-badge)
+
+</p>
+
+<p>
+
+![Stars](https://img.shields.io/github/stars/SHLOKAGARWAL8/CurrencyVision?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/SHLOKAGARWAL8/CurrencyVision?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/SHLOKAGARWAL8/CurrencyVision?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/SHLOKAGARWAL8/CurrencyVision?style=for-the-badge)
+
+</p>
+
+</div>
+
 CurrencyVision is a modern JavaFX-based desktop application that provides real-time currency conversion using live exchange rates from the Frankfurter API. It features an intuitive user interface, historical exchange rate visualization, conversion history tracking, dark mode support, and robust input validation, making it a practical and user-friendly currency converter.
 
 ---
